@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unique Bikes</title>
+</head>
+<body>
+   
+<nav class="navbar">
+    <img src="/Group 4.png" alt="Logo" class="logo">
+    <ul class="nav-links">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Bikes</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="icons">
+        <i class="bi bi-cart2" onclick="showCart()" data-count="0"></i>
+        <div id="cartContent" class="cart-content">
+            <h3>Your Cart</h3>
+        </div>
+        <i class="bi bi-person-circle"></i>
+    </div>
+    <div class="burger" onclick="toggleMenu()">
+        <i class="bi bi-list"></i>
+    </div>
+</nav>
+
+
+
+
+<!-- JS Section -->
+<!-- picture section -->
+<div id="section1">
+    <div id="pic-part">
+        <h1 class="big-head">THE <br> EUPHORIA</h1>
+        <img src="./Bicycle - 1280x811 (1).png" class="pic1" id="big-img">
+    </div>
+
+
+
+    <!-- JS Section - Slider ( we have 3 parts colors, size, add to cart)-->
+    <div id="js-part">
+        <div id="color-part">
+            <h3 class="class-size">COLORS</h3>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1">
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <div id="control">
+                    <label for="slide1">
+                        <p id="clr1" onclick="white()"></p>
+                    </label>
+                    <label for="slide2">
+                        <p id="clr2" onclick="gray()"></p>
+                    </label>
+                    <label for="slide3">
+                        <p id="clr3" onclick="orange()"></p>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="size-part">
+            <h3 class="class-size">SIZE</h3>
+            <div id="buttons">
+                <button class="btn" onclick="small()"
+                    style="border: 2px solid white; border-radius: 0px; padding: 1px; width: 4rem; color: white;margin-left: 8px;   font-size: 0.75rem;">small</button>
+                <button class="btn" onclick=" medium()"
+                    style="border: 2px solid white; border-radius: 0px; padding: 1px; width: 4rem; color: white;margin-left: 8px;   font-size: 0.75rem;">medium</button>
+                <button class="btn" onclick="large()"
+                    style="border: 2px solid white; border-radius: 0px; padding: 1px; width: 4rem; color: white;margin-left: 8px;   font-size: 0.75rem;">large</button>
+            </div>
+        </div>
+        <div id="cart-part">
+            <div id="type">
+                <p>PRICE</p>
+                <p>WEIGHT</p>
+            </div>
+            <div id="price">
+                <p id="prr">$2,500</p>
+                <p id="wrr">14.18kg </p>
+            </div>
+
+        </div>
+        <button class="big-btn" onclick="count()" id="ButtonOne">Add to cart</button>
+    </div>
+
+
+</div>
+<!-- js section end -->
+
+
+
+
+
+
+
+
+<!-- Overlap part & second slider -->
+<section id="section22">
+    <div id="bikeimgs">
+        <img src="/Rectangle 18.png" class="img">
+        <img src="/Rectangle 19.png" class="img">
+        <img src="./Rectangle 17.png" class="img">
+    </div>
+    <h1>Customize</h1>
+    <hr>
+    <div id="sliderr">
+        <div class="slider-img">
+            <img src="/Rectangle 33.png">
+            <h4>Saddle</h4>
+        </div>
+        <div class="slider-img">
+            <img src="/Rectangle 34.png">
+            <h4>crank gear</h4>
+        </div>
+        <div class="slider-img">
+            <img src="./Rectangle 35.png">
+            <h4>frame</h4>
+        </div>
+        <div class="slider-img">
+            <img src="/Rectangle 33.png">
+            <h4>Saddle</h4>
+        </div>
+        <div class="slider-img">
+            <img src="/Rectangle 34.png">
+            <h4>crank gear</h4>
+        </div>
+        <img src="/Arrow 1.png" id="nextBtn">
+    </div>
+
+</section>
+
+
+
+
+
+<!-- paragraph section -->
+<section id="section33">
+    <div id="frst">
+        <div id="para-selectors">
+            <h3 id="para-selector1" onclick="dis()">DISCRIPTION</h3>
+            <h3 id="para-selector2" onclick="spec()">SPECS</h3>
+        </div>
+        <div id="para-changes">
+            <h4 id="para-select1">Be unique with your choice of ride.</h4>
+            <p id="para-select2">The EUPHORIA turns obstacles into features. Its nimble, poppy feel makes even the most
+                mundane rides feel like they're loaded with features to hop, skip and jump over. It's the kind of bike
+                that
+                makes new trails feel as familiar as the back of your hand. <br> <br> 27.5 is the fun-sized wheel size.
+                Smaller wheels provide an ideal balance between toughness and weight saving making them the most
+                fleet-footed (or quick fingered) whether launching logs or weaving through stumps. With its quick and
+                agile
+                character, the 5010 has become a go-to plaything for progressive riders the world over and the only
+                contender on any backyard trails.</p>
+        </div>
+    </div>
+    <button class="big-btn2"> 
+        <button class="unique-web">
+            <a href="https://www.dsmotorsunique.com/ud125.php"> FOLLOW US @UNIQUEBIKE</a>
+        </button>
+</section>
+
+
+
+
+
+<!-- pictures collage -->
+<section id="section44">
+    <div id="collage">
+        <div class="collage1">
+            <img src="/Rectangle 9.png">
+            <img src="/Rectangle 12.png">
+        </div>
+        <div id="collage-cent">
+            <img src="/Rectangle 10.png" alt="">
+        </div>
+        <div class="collage1">
+            <img src="/Rectangle 13.png">
+            <img src="./Rectangle 11.png">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- last part -->
+<footer id="lastpart">
+    <div id="foot1">
+        <div id="foot-logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="foot-link">
+            <li class="l-head">FAQS</li>
+            <li>TERMS & CONDITIONS</li>
+            <li>PRIVACY SUPPORT</li>
+            <li>HELP</li>
+        </div>
+        <div class="foot-link">
+            <li class="l-head">SUPPORT</li>
+            <li>Assembly Guides</li>
+            <li>Payment</li>
+            <li>Shipping & Delivery</li>
+            <li>Returns & Refunds</li>
+        </div>
+        <div class="foot-link">
+            <li class="l-head">SERVICE@UNIQUEBIKES.COM</li>
+            <li>45 Fairground Rd, New York, United States
+            </li>
+        </div>
+
+
+    </div>
+    <div id="foot2">
+        <p>©Copyright Unique bikes</p>
+        <!-- <p>code by Warisha</p> -->
+    </div>
+</footer>
+
+
+    <script src="/style.js"></script>
+</body>
+</html>
